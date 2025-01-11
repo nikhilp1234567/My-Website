@@ -1,0 +1,6 @@
+title: My Personal Website
+description: A simple site created for me
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
