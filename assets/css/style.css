@@ -100,6 +100,7 @@ button{
     gap: 10px;
     flex-wrap: wrap;
     padding: 50px 100px;
+    margin: 16px;
 
     @media (max-width: 1183px){
         flex: 1;
