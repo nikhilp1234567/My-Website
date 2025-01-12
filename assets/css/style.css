@@ -27,6 +27,11 @@ body{
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
+
+    @media (max-width: 1183px){
+        width: 100vw;
+    }
+
 }
 
 .header, .section-1, .footer{
@@ -121,8 +126,9 @@ body{
 .section-1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 50px 100px;
     margin: 16px;
 
@@ -145,12 +151,14 @@ body{
 
     @media (max-width: 1183px){
     align-items: center;
+    width: 100%;
     }
 }
 .section-1 > div {
+    @media (min-width: 1183px){
     flex-grow: 1;
     flex-wrap: wrap;
-    max-width: 50%;
+    max-width: 50%;}
 }
 
 .hero{
@@ -162,6 +170,11 @@ body{
     font-size: 18px;
     font-weight: 100;
     width: 35vw;
+
+    @media (max-width: 1183px){
+        width: 90vw;
+    }
+
 }
 
 .s1-right{
@@ -169,6 +182,14 @@ body{
     width: 40vw;
     outline: 3px solid white;
     min-width: 500px;
+
+  
+}
+
+.carousel{
+    @media (max-width: 1183px){
+        width: 90vw;
+    }
 }
 
 img{
@@ -180,12 +201,46 @@ img{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 100px;
+    padding: 50px 0px;
 }
 .s2-title{
     display: flex;
     justify-content: center;
 }
+.s2-title > h1 {
+    text-align: center;
+}
+
+
+.swiper {
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  
+.swiper-wrapper{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 10px 10px 10px 0px;
+
+  }
+  
+  .swiper-pagination {
+  }
+
+
 .s2-boxes{
     display: flex;
     flex-direction: row;
@@ -213,7 +268,17 @@ img{
     outline: 2px solid #3882F6;
     border-radius: 10px;
     padding: 1%;
+    height: 400px;
+    margin: 10px 0px;
+    transition-duration: 0.5s;
+
 }
+
+.box-and-text-container:hover{
+padding: 5%;
+outline: 5px solid black;
+}
+
 
 .text{
     text-align: center;
@@ -354,8 +419,13 @@ img{
    font-weight: 200;
 }
 
+.about-text-container{
+ transition-duration: 0.5s;
+}
 
-
+.about-text-container:hover{
+padding: 1%;
+}
 /* this is for the blogs now  */
 
 .blog-section-1{
