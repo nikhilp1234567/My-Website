@@ -213,10 +213,12 @@ img{
 
 
 .swiper {
-    width: 90vw;
-    height: max-content;
-    display: flex;
-    justify-content: center;
+    width: 90vw; /* or 100% for full width */
+  max-width: 1200px; /* Constrain maximum width */
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  /* overflow: hidden; Prevent content over */
   }
   
 .swiper-wrapper{
@@ -232,9 +234,10 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: fit-content !important;
     height: auto;
     margin: 10px 10px 10px 0px;
+    width: auto; /* Allow Swiper to calculate the width */
+    max-width: 300px; /* Co */
 
   }
   
