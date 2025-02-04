@@ -226,7 +226,7 @@ img {
   padding: 20px;
   background: #1f2937;
   border-radius: 10px;
-  outline: 4px solid white;
+  /* outline: 4px solid black; */
 }
 
 .swiper-slide img {
