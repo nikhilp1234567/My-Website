@@ -212,6 +212,9 @@ img {
 .swiper {
   width: 50vw;
   height: 450px;
+  @media (max-width: 1000px) {
+    height: max-content;
+  }
 }
 
 .swiper-slide {
@@ -226,7 +229,18 @@ img {
   padding: 20px;
   background: #1f2937;
   border-radius: 10px;
-  /* outline: 4px solid black; */
+  outline: 4px solid black;
+
+  @media (max-width: 1000px) {
+    padding: 20px;
+    height: max-content !important;
+  }
+}
+
+.swiper-slide > .slide-content > p {
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .swiper-slide img {
